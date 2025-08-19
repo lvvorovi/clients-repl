@@ -1,0 +1,63 @@
+REPLIT
+
+github link: https://github.com/lvvorovi/clients-repl.git
+
+I need an application that will visually look like the one you have built previously.
+
+Business needs:
+- clients can use search bar can search for spare part number. Response from api call to the server should be shown in the popup at the bottom right.
+- clients can open Requests Page
+- clients can open Orders Page
+- clients can open Invoices Page
+- clients can open Items In Process Page
+- client can open Reclamation Page
+- All pages should be opened via button, that is located in the vertical menu bar placed on the left
+- Above each page view there should be a header bar, width of all the size of window. Right side of the bar should have a drop down menu that will have a text of the client name, when opened - show following buttons: log-out. Left side of the bar should have a name of the page.
+- Requests page should have: second line of: 
+	- button 'New Request'
+	- drop down menu 'Status Filter' that will filter requests by the chosen status
+- Requests page should have table showing list of requests. it should look like the example you provided in the previous application you built for me.
+- When 'New Request' clicked, New Request Page should be opened. It should allow adding items to the request providing part-number, brand, quantity.
+- New Request Page should have button "Place Order".
+
+the rest of business needs will be decided and communicated later.
+
+Technical requirements:
+
+"scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
+    "@tanstack/react-query": "^5.84.1",
+    "lodash": "^4.17.21",
+    "oidc-client-ts": "^3.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-oidc-context": "^3.3.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.7.1",
+    "redux": "^5.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "eslint": "^9.30.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.35.1",
+    "vite": "^7.0.4"
+  }
+  
+  React app with TypeScript
+  
+  
+  
+  Are you missing anything to proceed?

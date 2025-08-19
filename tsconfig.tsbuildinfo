@@ -1,0 +1,22 @@
+{
+  "root": [
+    "./src/App.tsx",
+    "./src/main.tsx",
+    "./src/components/Layout/Header.tsx",
+    "./src/components/Layout/Layout.tsx",
+    "./src/components/Layout/Sidebar.tsx",
+    "./src/components/SearchBar/SearchBar.tsx",
+    "./src/components/SearchPopup/SearchPopup.tsx",
+    "./src/pages/InvoicesPage.tsx",
+    "./src/pages/ItemsInProcessPage.tsx",
+    "./src/pages/NewRequestPage.tsx",
+    "./src/pages/OrdersPage.tsx",
+    "./src/pages/ReclamationPage.tsx",
+    "./src/pages/RequestsPage.tsx",
+    "./src/store/store.ts",
+    "./src/store/slices/authSlice.ts",
+    "./src/store/slices/requestsSlice.ts",
+    "./src/store/slices/uiSlice.ts"
+  ],
+  "version": "5.8.3"
+}

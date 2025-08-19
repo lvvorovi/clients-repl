@@ -1,0 +1,138 @@
+.new-request-page {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.page-header h2 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.request-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1200px;
+}
+
+.form-section {
+  padding: 24px;
+}
+
+.form-section h3 {
+  margin: 0 0 20px 0;
+  color: var(--text-primary);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.items-section {
+  padding: 24px;
+}
+
+.add-item-form {
+  padding: 20px;
+  background-color: var(--surface-gray);
+  border-radius: var(--radius);
+  margin-bottom: 24px;
+}
+
+.add-item-btn {
+  margin-top: 16px;
+}
+
+.items-list h4 {
+  margin: 0 0 16px 0;
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.items-table-wrapper {
+  border: 1px solid var(--border-gray);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.items-table {
+  margin: 0;
+}
+
+.items-table th {
+  background-color: var(--surface-gray);
+}
+
+.part-number {
+  font-weight: 600;
+  color: var(--primary-blue);
+  font-family: monospace;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+  border-top: 1px solid var(--border-gray);
+}
+
+.place-order-btn {
+  min-width: 160px;
+  justify-content: center;
+}
+
+.place-order-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.place-order-btn .loading {
+  width: 16px;
+  height: 16px;
+  border-width: 2px;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-section,
+  .items-section {
+    padding: 16px;
+  }
+
+  .add-item-form {
+    padding: 16px;
+  }
+
+  .items-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .items-table {
+    min-width: 600px;
+  }
+}

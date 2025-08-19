@@ -1,0 +1,39 @@
+.layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  transition: margin-left 0.3s ease;
+}
+
+.main-container.sidebar-open {
+  margin-left: 280px;
+}
+
+.main-container.sidebar-closed {
+  margin-left: 60px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 24px;
+  background-color: var(--surface-gray);
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .main-container.sidebar-open,
+  .main-container.sidebar-closed {
+    margin-left: 0;
+  }
+  
+  .main-content {
+    padding: 16px;
+  }
+}
